@@ -6,6 +6,6 @@ const CONFIG = {
     OG_DESCRIPTION: "Check out this amazing offer and start earning today!", // Description for social media sharing
     OG_IMAGE_URL: "https://i.imghippo.com/files/gtgq1634k.jpg", // Image for social media sharing (absolute URL)
     DISPLAY_IMAGE_URL: "https://i.imghippo.com/files/gtgq1634k.jpg", // Image displayed on the page itself (absolute URL)
-    REDIRECT_DELAY_MS: 2000 // Delay in milliseconds before redirection (e.g., 2000 for 2 seconds)
+    REDIRECT_DELAY_MS: 1000 // Delay in milliseconds before redirection (e.g., 2000 for 2 seconds)
 };
 s
